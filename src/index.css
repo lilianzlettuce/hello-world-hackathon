@@ -1,6 +1,9 @@
 :root {
     --black: rgb(24, 24, 24);
 
+    --red: rgb(255, 97, 97);
+    --darkred: rgb(232, 0, 0);
+
     --darker: rgb(0, 7, 112);
     --dark: rgb(0, 11, 168);
     --main: rgb(24, 40, 255);
@@ -43,15 +46,8 @@ code {
     width: 100vw;
     height: fit-content;
     min-height: 100vh;
-}
-
-.section{
     margin: 0 auto;
     padding: 40px 100px;
-}
-
-.landing-title {
-    font-size: 180px;
 }
 
 h2 {
@@ -132,41 +128,26 @@ button {
     outline: none;
     border: none;
     background-color: white;
-    color: var(--main);
-    border: none;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 1.5rem;
-    font-weight: 600;
+    border: 2px solid black;
+    color: black;
+    border-radius: 15px;
+    font-family: 'Roboto Mono';
+    font-size: 10px;
+    font-weight: bold;
     transition: 1s ease;
     padding: 3px 10px;
-    margin: 0 1rem .5rem .5rem;
     cursor: pointer;
 }
 button:hover {
-    color: var(--light);
+    background-color: black;
+    color: white;
+    border: 2px solid black;
 }
 
-.usable-btn {
-    border-radius: 25px;
-    background-color: var(--main-light);
+.button2 {
+    background-color: black;
     color: white;
-    padding: 10px 12px;
-}
-.usable-btn:hover {
-    background-color: var(--light);
-    color: white;
-}
-
-.unusable-btn {
-    border-radius: 25px;
-    background-color: var(--lighter);
-    color: white;
-    padding: 10px 12px;
-}
-.unusable-btn:hover {
-    cursor: auto;
-    color: white;
+    border: 2px solid black;
 }
 
 .container{

@@ -1,0 +1,20 @@
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    z-index: 500;
+    box-shadow: 0px 0px 4px 1px rgba(128, 128, 128, 0.322);
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+}

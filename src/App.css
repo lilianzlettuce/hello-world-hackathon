@@ -1,3 +1,35 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-title {
+    font-size: 90px;
+    color: var(--black);
+    font-family: 'Roboto Mono';
+}
+
+.sos-btn {
+    font-size: 50px;
+    border: none;
+    color: var(--red);
+    color: white;
+    background-color: var(--red);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    font-weight: 800;
+    animation: flash duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes flash {
+    to {
+        background-color: var(--darkred);
+    }
+}
+
 .App {
     text-align: center;
 }

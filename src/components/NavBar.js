@@ -1,5 +1,6 @@
 'use strict';
 import React from 'react';
+import '../NavBar.css';
 
 export default class NavBar extends React.Component {
     constructor(props) {
@@ -8,11 +9,14 @@ export default class NavBar extends React.Component {
 
     render() {
         return (
-            <div className="section" id="navbar">
+            <div className="navbar">
                 <div className="name">
                 </div>
-                <div id="menu">
-                    <button onClick={signOut}>Sign Out</button>
+                <div className="nav-links">
+                    <a className='nav-link'>Advanced Search</a>
+                    <a className='nav-link'>Map</a>
+                    <a className='nav-link'>Input Data</a>
+                    <button>Sign In</button>
                 </div>
             </div>
         )
