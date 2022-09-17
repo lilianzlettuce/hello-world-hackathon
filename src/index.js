@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+//import reportWebVitals from './reportWebVitals';
 
 import "@aws-amplify/ui-react/styles.css"; // Ensure React UI libraries are styled correctly
 import { Amplify } from 'aws-amplify'
