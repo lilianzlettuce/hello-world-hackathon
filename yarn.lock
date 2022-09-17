@@ -14385,6 +14385,11 @@
   "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.8.3.tgz"
   "version" "4.8.3"
 
+"typing-animate@^1.0.4":
+  "integrity" "sha512-smG88YrTtGc1syXn0u2LVkxR01RSZYyBMBfPd4sKwfFSG+pwFyWpu5eb666s+qhB+hI7eklKqOnIsNJmmAIAnA=="
+  "resolved" "https://registry.npmjs.org/typing-animate/-/typing-animate-1.0.4.tgz"
+  "version" "1.0.4"
+
 "uglify-es@^3.1.9":
   "integrity" "sha512-r+MU0rfv4L/0eeW3xZrd16t4NZfK8Ld4SWVglYBb7ez5uXFWHuVRs6xCTrf1yirs9a4j4Y27nn7SRfO6v67XsQ=="
   "resolved" "https://registry.npmjs.org/uglify-es/-/uglify-es-3.3.9.tgz"

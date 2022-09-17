@@ -1,14 +1,190 @@
+:root {
+    --black: rgb(24, 24, 24);
+
+    --darker: rgb(0, 7, 112);
+    --dark: rgb(0, 11, 168);
+    --main: rgb(24, 40, 255);
+    --main-light: rgb(66, 94, 255);
+    --light: rgb(103, 126, 255);
+    --lighter: rgb(163, 177, 255);
+    --lighterer: rgb(232, 236, 255);
+  
+    --sub: orange;
+    --sub-light: rgb(255, 183, 50);
+    --sub-lighter: rgb(255, 202, 103);
+    --sub-lighterer: rgb(255, 244, 223);
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont,  
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 
+            sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
-  
+
+* {
+    box-sizing: border-box;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
+}
+
+.frame {
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+.section{
+    margin: 0 auto;
+    padding: 40px 100px;
+}
+
+.landing-title {
+    font-size: 180px;
+}
+
+h2 {
+    color: var(--darker);
+    font-weight: 500;
+    margin: 0 15px;
+}
+.h2 {
+    color: var(--darker);
+    width: fit-content;
+    max-width: none !important;
+    min-width: none !important;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+select {
+    outline: none;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: inherit;
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: var(--darker);
+    background-color: transparent;
+}
+option {
+    outline: none;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: inherit;
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin: 0 0 0 40px;
+    color: var(--darker);
+    background-color: transparent;
+}
+
+textarea{
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: black;
+    height: fit-content;
+    overflow: hidden;
+    resize: none;
+}
+input{
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+}
+.input {
+    border-bottom: 1px solid var(--main);
+    padding: 7px 3px 7px 3px;
+    margin: 1rem;
+    color: black;
+    width: 45%;
+    line-height: 23px;
+    background-color: transparent;
+}
+
+a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: inherit;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: white;
+    color: var(--main);
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 1s ease;
+    padding: 3px 10px;
+    margin: 0 1rem .5rem .5rem;
+    cursor: pointer;
+}
+button:hover {
+    color: var(--light);
+}
+
+.usable-btn {
+    border-radius: 25px;
+    background-color: var(--main-light);
+    color: white;
+    padding: 10px 12px;
+}
+.usable-btn:hover {
+    background-color: var(--light);
+    color: white;
+}
+
+.unusable-btn {
+    border-radius: 25px;
+    background-color: var(--lighter);
+    color: white;
+    padding: 10px 12px;
+}
+.unusable-btn:hover {
+    cursor: auto;
+    color: white;
+}
+
+.container{
+    margin: 110px auto 60px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch-btn {
+    background-color: white;
+    color: var(--light)
+}
+.switch-btn:hover {
+    background-color: white;
 }
