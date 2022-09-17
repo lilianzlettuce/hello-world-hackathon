@@ -21,10 +21,13 @@
     height: 150px;
     width: 150px;
     font-weight: 800;
-    animation: flash duration timing-function delay iteration-count direction fill-mode;
+    animation: flash 2s ease-in 0 infinite alternate-reverse forwards;
 }
 
 @keyframes flash {
+    from {
+        background-color: var(--red);
+    }
     to {
         background-color: var(--darkred);
     }
