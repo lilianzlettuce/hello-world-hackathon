@@ -46,7 +46,18 @@ body {
     padding: 40px 100px;
 }
 
+.section {
+    width: 100vw;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 40px 100px;
+}
+
 h1 {
+    font-family: 'Roboto Mono';
+}
+
+h2 {
     font-family: 'Roboto Mono';
 }
 
@@ -96,17 +107,29 @@ button {
     border: none;
     background-color: black;
     color: white;
-    border: 2px solid black;
     border-radius: 5px;
     font-size: 10px;
     font-weight: bold;
     transition: 1s ease;
-    padding: 7px 15px;
+    padding: 9px 17px;
     cursor: pointer;
 }
 
 .button2 {
-    background-color: black;
+    background-color: white;
+    color: black;
+}
+
+.black-box {
+    background-color: var(--black);
     color: white;
-    border: 2px solid black;
+    padding: 20px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 10px rgba(128, 128, 128, 0.322);
+    width: 80%;
+    margin: auto;
+}
+
+.center-text {
+    text-align: center;
 }
