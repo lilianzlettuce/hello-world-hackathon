@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import HomePage from './HomePage';
 import Search from './Search.js';
+import ProfilePage from './ProfilePage.js';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -19,6 +20,9 @@ export default class App extends React.Component {
                 </Routes>
                 <Routes>
                     <Route path="/search" element={<Search />} />
+                </Routes>
+                <Routes>
+                    <Route path="/profile" element={<ProfilePage />} />
                 </Routes>
             </BrowserRouter>
         );
