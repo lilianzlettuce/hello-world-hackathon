@@ -1,10 +1,10 @@
-import '../DisplayData.css';
+import '../Search.css';
 import { createNote, deleteNote} from '../graphql/mutations'
 import { listNotes } from '../graphql/queries'
 import { useCallback, useEffect, useState } from 'react';
 import { API } from 'aws-amplify';
 
-function DisplayData({ signOut }) {
+function Search({ signOut }) {
     const [ notes, setNotes ] = useState([])
 
     const fetchNotes = useCallback(async () => {
@@ -50,4 +50,4 @@ function DisplayData({ signOut }) {
     );
 }
 
-export default /*withAuthenticator(*/DisplayData/*)*/;
+export default /*withAuthenticator(*/Search/*)*/;

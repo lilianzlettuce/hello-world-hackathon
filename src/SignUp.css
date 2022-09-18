@@ -1,5 +1,5 @@
 .transparent-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -7,4 +7,24 @@
     opacity: 50%;
     background-color: black;
     z-index: 1000;
+}
+
+.sign-up-container {
+    position: fixed;
+    top: 15%;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 65%;
+    background-color: white;
+    opacity: 100% !important;
+    z-index: 1100;
+    border-radius: 15px;
+    padding: 50px 80px;
+}
+
+#x-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 350px;
 }

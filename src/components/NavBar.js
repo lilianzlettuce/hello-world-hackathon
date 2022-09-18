@@ -1,10 +1,19 @@
-'use strict';
 import React from 'react';
 import '../NavBar.css';
+import SignIn from '../components/SignIn';
 
 export default class NavBar extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
+        this.state = {
+            displaySignIn: false,
+        }
+    }
+
+    toggleSignIn = () => {
+        this.setState({ 
+            displaySignIn: true,
+        });
     }
 
     render() {
@@ -16,12 +25,12 @@ export default class NavBar extends React.Component {
                     <a className='nav-link'>Advanced Search</a>
                     <a className='nav-link'>Map</a>
                     <a className='nav-link'>Input Data</a>
-                    <button>Sign In</button>
+                    <button
+                        onClick={this.toggleSignIn}
+                    >Sign In</button>
                 </div>
+                {this.state.displaySignIn == true && <SignIn/>}
             </div>
         )
     }
 }
-
-//const domContainer = document.querySelector('#top-bar-container')
-//ReactDOM.render(<NavBar />, domContainer)
