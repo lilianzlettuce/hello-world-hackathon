@@ -2,6 +2,8 @@ import React from 'react';
 import '../NavBar.css';
 import SignIn from '../components/SignIn';
 
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 export default class NavBar extends React.Component {
     constructor(props) {
         super(props);
@@ -22,9 +24,10 @@ export default class NavBar extends React.Component {
                 <div className="name">
                 </div>
                 <div className="nav-links">
-                    <a className='nav-link'>Advanced Search</a>
-                    <a className='nav-link'>Map</a>
-                    <a className='nav-link'>Input Data</a>
+                    <Link to="/search" className='nav-link'>Advanced Search</Link>
+                    <Link to="/map" className='nav-link'>Map</Link>
+                    <Link to="/data" className='nav-link'>Input Data</Link>
+
                     <button
                         onClick={this.toggleSignIn}
                     >Sign In</button>

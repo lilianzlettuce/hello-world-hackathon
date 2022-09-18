@@ -3,9 +3,8 @@ import React from 'react';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import HomePage from './components/HomePage';
-import NavBar from './components/NavBar';
-import Search from './components/Search.js';
+import HomePage from './HomePage';
+import Search from './Search.js';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -17,6 +16,9 @@ export default class App extends React.Component {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
+                </Routes>
+                <Routes>
+                    <Route path="/search" element={<Search />} />
                 </Routes>
             </BrowserRouter>
         );

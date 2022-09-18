@@ -1,8 +1,10 @@
-import '../Search.css';
-import { createNote, deleteNote} from '../graphql/mutations'
-import { listNotes } from '../graphql/queries'
+import './Search.css';
+import { createNote, deleteNote} from './graphql/mutations'
+import { listNotes } from './graphql/queries'
 import { useCallback, useEffect, useState } from 'react';
 import { API } from 'aws-amplify';
+
+import NavBar from './components/NavBar';
 
 function Search({ signOut }) {
     const [ notes, setNotes ] = useState([])
@@ -39,6 +41,7 @@ function Search({ signOut }) {
 
     return (
         <div>
+            <NavBar />
             <div className='frame'>
                 {notes.map(note => <div>
                     <p>{note.text}</p>
