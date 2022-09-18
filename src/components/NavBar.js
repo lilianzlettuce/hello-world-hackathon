@@ -2,6 +2,9 @@ import React from 'react';
 import '../NavBar.css';
 import SignIn from '../components/SignIn';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
 import { Link } from 'react-router-dom';
 
 export default class NavBar extends React.Component {
@@ -21,8 +24,9 @@ export default class NavBar extends React.Component {
     render() {
         return (
             <div className="navbar">
-                <div className="name">
-                </div>
+                <Link to="/" className='nav-link'>
+                    <FontAwesomeIcon icon={faHeart} color="var(--red)" style={{fontSize: '23px'}}/>
+                </Link>
                 <div className="nav-links">
                     <Link to="/search" className='nav-link'>Advanced Search</Link>
                     <Link to="/map" className='nav-link'>Map</Link>

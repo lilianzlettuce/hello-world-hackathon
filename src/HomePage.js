@@ -5,7 +5,7 @@ import './HomePage.css';
 import NavBar from './components/NavBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartCircleCheck, faBatteryHalf, faGlobe, faEarthOceania, 
-    faCloudArrowUp } from '@fortawesome/free-solid-svg-icons'
+    faCloudArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 export default class HomePage extends React.Component {
     constructor(props) {
