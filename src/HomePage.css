@@ -24,6 +24,7 @@
     transition: 1s ease;
     margin-top: 20px;
     font-family: 'Roboto Mono';
+    box-shadow: 0px 0px 8px 5px rgba(172, 172, 172, 0.322);
 }
 
 .sos-btn:hover {

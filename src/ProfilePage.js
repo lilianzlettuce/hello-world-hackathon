@@ -14,13 +14,7 @@ export default class ProfilePage extends React.Component {
         return (
             <div>
                 <NavBar />
-                <div className='frame'>
-                    {notes.map(note => <div>
-                        <p>{note.text}</p>
-                        <button onClick={() => handleDeleteNote(note.id)}>Remove</button>
-                    </div>)}
-                    <button onClick={handleCreateNote}>Add Note</button>
-                    </div>
+                
             </div>
         );
     }
